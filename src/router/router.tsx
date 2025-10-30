@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainLayout } from "../layouts";
+import { MainLayout, SubComuLayout } from "../layouts";
 import {
   BizPage,
   ComuPage,
@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
               },
               {
                 path: ":id",
-                element: <>서브</>,
+                element: <SubComuLayout />,
               },
             ],
           },

@@ -77,3 +77,5 @@ export interface SubComuCardType {
   location?: string; // 장소 (예: "서울 송파")
   createdAt?: string; // 생성일 (선택, "YYYY-MM-DD")
 }
+
+export interface SubComuType {}

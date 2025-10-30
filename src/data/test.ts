@@ -3,6 +3,7 @@ import type {
   ComuNoticeType,
   ComuReviewType,
   SubComuCardType,
+  SubComuType,
 } from "../types/comu";
 
 export const notices: ComuNoticeType[] = [
@@ -232,7 +233,7 @@ export const comuReviews: ComuReviewType[] = [
   },
 ];
 
-export const subComus: SubComuCardType[] = [
+export const subComuCards: SubComuCardType[] = [
   {
     id: "p001",
     hostName: "TOM Jang",
@@ -368,3 +369,5 @@ export const subComus: SubComuCardType[] = [
     createdAt: "2025-03-03",
   },
 ];
+
+export const subComus: Record<string, SubComuType> = {};
