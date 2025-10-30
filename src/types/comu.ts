@@ -53,3 +53,27 @@ export interface ComuReviewContextType extends ComuReviewType {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+// 서브 커뮤 목록
+// =======================
+// TypeScript 타입 정의
+// =======================
+export interface Fees {
+  signupFee?: number; // 가입비 (원)
+  monthlyFee?: number; // 회비 (원)
+  note?: string; // 추가 설명(선택)
+}
+
+export interface SubComuCardType {
+  id: string; // ex: "p001"
+  hostName: string; // ex: "TOM Jang"
+  hostAvatar?: string; // 이미지 경로 또는 URL
+  title: string; // 프로그램 제목
+  subtitle?: string; // 한줄 소개
+  description?: string; // 카드 본문 설명
+  target?: string; // 대상 (예: "일반 전체")
+  fees?: Fees; // 비용 정보
+  schedule?: string; // 일정 (예: "토요일 (오전)")
+  location?: string; // 장소 (예: "서울 송파")
+  createdAt?: string; // 생성일 (선택, "YYYY-MM-DD")
+}

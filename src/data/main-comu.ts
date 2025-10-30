@@ -1,6 +1,6 @@
 import { leader1, leader2, leader3, leader4 } from "../assets";
 import type { ComuMetaKey } from "../types";
-import { comuReviews } from "./test";
+import { comuReviews, subComus } from "./test";
 
 export const MainComu = {
   title: "세상을 변화 시키는 한 사람의 위대한 변화",
@@ -82,6 +82,10 @@ export const MainComu = {
   review: {
     title: "후기",
     reviews: comuReviews,
+  },
+  subComus: {
+    title: "Sub Comus",
+    comus: subComus,
   },
 };
 

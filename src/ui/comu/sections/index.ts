@@ -6,3 +6,4 @@ export * from "./MissionSection";
 export * from "./NoticeSection";
 export * from "./CommunitySection";
 export * from "./ReviewSection";
+export * from "./SubComuSection";

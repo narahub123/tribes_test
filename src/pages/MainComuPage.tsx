@@ -8,6 +8,7 @@ import {
   OriginSection,
   PrevButton,
   VisionSection,
+  SubComuSection,
 } from "../ui";
 
 export const MainComuPage = () => {
@@ -26,6 +27,7 @@ export const MainComuPage = () => {
         <NoticeSection />
         <CommunitySection />
         <ReviewSection />
+        <SubComuSection />
       </main>
     </div>
   );

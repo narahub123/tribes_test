@@ -39,6 +39,19 @@ export const router = createBrowserRouter([
               },
             ],
           },
+          {
+            path: "subs",
+            children: [
+              {
+                index: true,
+                element: <>서브 목록</>,
+              },
+              {
+                path: ":id",
+                element: <>서브</>,
+              },
+            ],
+          },
         ],
       },
       {
