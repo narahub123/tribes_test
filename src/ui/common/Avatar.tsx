@@ -1,6 +1,6 @@
 import type { FC } from "react";
-import { Image } from "../../ui";
 import type { ReactImageProps } from "../../types";
+import { defaultImage } from "../../assets";
 
 type AvatarProps = ReactImageProps & {
   name?: string;
@@ -9,12 +9,14 @@ type AvatarProps = ReactImageProps & {
 export const Avatar: FC<AvatarProps> = ({
   name,
   className: _className,
+  src,
   ...props
 }) => {
   const className = ["rounded-full p-2 border-1", _className].join(" ");
 
   return (
-    <Image
+    <img
+      src={src ?? defaultImage}
       {...props}
       alt={name ? `${name}의 프로필 사진` : undefined}
       className={className}

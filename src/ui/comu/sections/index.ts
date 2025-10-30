@@ -5,3 +5,4 @@ export * from "./VisionSection";
 export * from "./MissionSection";
 export * from "./NoticeSection";
 export * from "./CommunitySection";
+export * from "./ReviewSection";

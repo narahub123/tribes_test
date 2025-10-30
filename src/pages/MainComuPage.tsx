@@ -1,4 +1,5 @@
 import {
+  ReviewSection,
   CommunitySection,
   LeaderSection,
   LeadershipSection,
@@ -24,6 +25,7 @@ export const MainComuPage = () => {
         <MissionSection />
         <NoticeSection />
         <CommunitySection />
+        <ReviewSection />
       </main>
     </div>
   );

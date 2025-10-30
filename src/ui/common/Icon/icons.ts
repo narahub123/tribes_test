@@ -54,6 +54,7 @@ import {
   RiErrorWarningFill as warningCircleFill, // 경고 원
   RiFlag2Line as flagOutline, // 깃발
   RiFlag2Fill as flagFill, // 깃발
+  RiHeartAdd2Line as metaPlus,
 } from "react-icons/ri";
 
 import {
@@ -95,4 +96,5 @@ export const icons = {
   checkBoxFill,
   radioOn,
   radioOff,
+  metaPlus,
 };
