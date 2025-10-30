@@ -71,4 +71,7 @@ export const MainComu = {
       "3️⃣ 새로운 AI 도구를 빠르게 배우고 공유하는 문화를 만든다.",
     ],
   },
+  notice: {
+    title: "공지",
+  },
 };

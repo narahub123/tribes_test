@@ -5,3 +5,10 @@ export interface ComuLeaderProfile {
   name: string;
   job: string;
 }
+
+export interface ComuNoticeType {
+  id: number;
+  title: string;
+  author: string;
+  createdAt: string;
+}
