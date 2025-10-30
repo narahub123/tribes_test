@@ -79,3 +79,19 @@ export interface SubComuCardType {
 }
 
 export interface SubComuType {}
+
+export type ComuInfoType = "intro" | "vision" | "mission";
+
+export type ComuInfo = Record<ComuInfoType, string>;
+
+export type Comu = {
+  id: string;
+  header: {
+    title: "Leader";
+    desc: string;
+  };
+  leader: {
+    leaderId: string;
+    info: ComuInfo;
+  };
+};

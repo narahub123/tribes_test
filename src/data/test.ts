@@ -235,7 +235,7 @@ export const comuReviews: ComuReviewType[] = [
 
 export const subComuCards: SubComuCardType[] = [
   {
-    id: "p001",
+    id: "comu1",
     hostName: "TOM Jang",
     hostAvatar: leader1,
     title: "AI 에이전트 기획 챌린지",
@@ -252,7 +252,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-10-01",
   },
   {
-    id: "p002",
+    id: "comu2",
     hostName: "박서연",
     hostAvatar: leader2,
     title: "창업자를 위한 비즈니스 북클럽",
@@ -265,7 +265,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-09-15",
   },
   {
-    id: "p003",
+    id: "comu3",
     hostName: "이민호",
     hostAvatar: leader3,
     title: "주말 인문학 산책",
@@ -278,7 +278,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-08-20",
   },
   {
-    id: "p004",
+    id: "comu4",
     hostName: "김유진",
     hostAvatar: leader4,
     title: "실무자를 위한 데이터 독서회",
@@ -291,7 +291,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-07-30",
   },
   {
-    id: "p005",
+    id: "comu5",
     hostName: "정해성",
     hostAvatar: leader1,
     title: "마음 챙김 독서 모임",
@@ -304,7 +304,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-10-05",
   },
   {
-    id: "p006",
+    id: "comu6",
     hostName: "한수진",
     hostAvatar: leader1,
     title: "영어 원서 스피크업 클럽",
@@ -317,7 +317,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-06-12",
   },
   {
-    id: "p007",
+    id: "comu7",
     hostName: "오민석",
     hostAvatar: leader1,
     title: "주간 경제 브리핑 클럽",
@@ -330,7 +330,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-09-01",
   },
   {
-    id: "p008",
+    id: "comu8",
     hostName: "윤하늘",
     hostAvatar: leader1,
     title: "문학 심층 토론 모임",
@@ -343,7 +343,7 @@ export const subComuCards: SubComuCardType[] = [
     createdAt: "2025-05-20",
   },
   {
-    id: "p009",
+    id: "comu9",
     hostName: "최동현",
     hostAvatar: leader1,
     title: "테크 트렌드 리딩 그룹",
