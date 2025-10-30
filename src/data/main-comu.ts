@@ -74,4 +74,7 @@ export const MainComu = {
   notice: {
     title: "공지",
   },
+  community: {
+    title: "커뮤니티",
+  },
 };

@@ -1,9 +1,14 @@
+import { MainComu } from "../../../data";
 import { ComuSectionHeader } from "../ComuSectionHeader";
 
 export const CommunitySection = () => {
+  const { title } = MainComu.community;
   return (
     <section>
-      <ComuSectionHeader title={"커뮤니티"} className="" />
+      <ComuSectionHeader title={title} />
+      <div className="p-4">
+        
+      </div>
     </section>
   );
 };
