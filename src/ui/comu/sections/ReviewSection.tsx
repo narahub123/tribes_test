@@ -22,7 +22,7 @@ export const ReviewSection = () => {
           );
         })}
         <Link to={`reviews`}>
-          <button className="w-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-200 ">
+          <button className="w-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-200 hover:text-white">
             더보기
           </button>
         </Link>

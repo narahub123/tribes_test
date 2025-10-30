@@ -10,7 +10,7 @@ export const LeaderSection: FC<LeaderSectionProps> = ({}) => {
   return (
     <section>
       <ComuSectionHeader title={title} className="text-blue-400" />
-      <div className="flex items-center p-4 gap-12">
+      <div className="flex flex-col items-center p-4 gap-12 sm:flex-row">
         {/* profile */}
         <div className="flex flex-col py-8 gap-4 shrink-0">
           <Link to={`/makers#${profile.id}`}>

@@ -17,7 +17,7 @@ export const SubComuSection = () => {
       </div>
       <div>
         <Link to="/comu/subs">
-          <button className="w-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-200 cursor-pointer">
+          <button className="w-full p-3 border border-blue-400 text-blue-400 hover:bg-blue-200 cursor-pointer hover:text-white">
             더보기
           </button>
         </Link>

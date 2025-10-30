@@ -39,7 +39,7 @@ export const SubComuCard: FC<SubComuCardProps> = ({ comu }) => {
             <thead></thead>
             <tbody>
               <tr>
-                <th className="text-blue-500">대상</th>
+                <th className="text-blue-500 whitespace-nowrap">대상</th>
                 <td className="p-2">{target}</td>
               </tr>
               <tr>

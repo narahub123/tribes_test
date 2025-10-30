@@ -8,7 +8,7 @@ export const LeadershipSection = () => {
   return (
     <section>
       <ComuSectionHeader title={title} />
-      <div className="flex justify-around py-8 ">
+      <div className="flex justify-around py-8 gap-2">
         {(leaders as ComuLeaderProfile[]).map((leader) => (
           <ComuProfilCard key={leader.id} leader={leader} />
         ))}
