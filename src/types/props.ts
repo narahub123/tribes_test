@@ -1,6 +1,6 @@
-import type { DetailedHTMLProps, HTMLAttributes } from "react";
+import type { DetailedHTMLProps, ImgHTMLAttributes } from "react";
 
 export type ReactImageProps = DetailedHTMLProps<
-  HTMLAttributes<HTMLImageElement>,
+  ImgHTMLAttributes<HTMLImageElement>,
   HTMLImageElement
 >;

@@ -12,6 +12,7 @@ export const Avatar: FC<AvatarProps> = ({
   ...props
 }) => {
   const className = ["rounded-full p-2 border-1", _className].join(" ");
+
   return (
     <Image
       {...props}
