@@ -2,12 +2,12 @@ import { useEffect, useState, type FC } from "react";
 import { comus, leaders } from "../../../data";
 import { ComuProfilCard, ComuSectionHeader } from "../../../ui";
 import type { Leader } from "../../../types";
+import { useComuContext } from "../../../contexts";
 
-interface LeadershipSectionProps {
-  comuId: string;
-}
+interface LeadershipSectionProps {}
 
-export const LeadershipSection: FC<LeadershipSectionProps> = ({ comuId }) => {
+export const LeadershipSection: FC<LeadershipSectionProps> = ({}) => {
+  const { comuId } = useComuContext();
   const [leaderships, setLeaderships] = useState<Leader[]>([]);
 
   useEffect(() => {

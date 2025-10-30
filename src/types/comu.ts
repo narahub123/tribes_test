@@ -95,4 +95,9 @@ export type Comu = {
     info: ComuInfo;
   };
   leaderships?: string[];
+  origin: string;
+};
+
+export type ComuContextType = {
+  comuId: string;
 };

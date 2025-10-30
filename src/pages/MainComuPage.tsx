@@ -12,6 +12,7 @@ import {
   SubComuSection,
 } from "../ui";
 import { useEffect, useState } from "react";
+import { ComuProvider } from "../contexts";
 
 export const MainComuPage = () => {
   const { pathname } = useLocation();
@@ -32,15 +33,17 @@ export const MainComuPage = () => {
         <PrevButton className="absolute top-2 left-0" />
       </header>
       <main>
-        <LeaderSection comuId={comuId} />
-        <LeadershipSection comuId={comuId} />
-        <OriginSection />
-        <VisionSection />
-        <MissionSection />
-        <NoticeSection />
-        <CommunitySection />
-        <ReviewSection />
-        <SubComuSection />
+        <ComuProvider value={{ comuId }}>
+          <LeaderSection />
+          <LeadershipSection />
+          <OriginSection />
+          <VisionSection />
+          <MissionSection />
+          <NoticeSection />
+          <CommunitySection />
+          <ReviewSection />
+          <SubComuSection />
+        </ComuProvider>
       </main>
     </div>
   );

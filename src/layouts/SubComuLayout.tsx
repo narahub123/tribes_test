@@ -10,6 +10,7 @@ import {
   ReviewSection,
   VisionSection,
 } from "../ui";
+import { ComuProvider } from "../contexts";
 
 export const SubComuLayout = () => {
   const { pathname } = useLocation();
@@ -30,14 +31,16 @@ export const SubComuLayout = () => {
         <h2 className="font-bold text-2xl p-4">서브 커뮤</h2>
       </div>
 
-      <LeaderSection comuId={comuId} />
-      <LeadershipSection comuId={comuId} />
-      <OriginSection />
-      <VisionSection />
-      <MissionSection />
-      <NoticeSection />
-      <ReviewSection />
-      <CommunitySection />
+      <ComuProvider value={{ comuId }}>
+        <LeaderSection />
+        <LeadershipSection />
+        <OriginSection />
+        <VisionSection />
+        <MissionSection />
+        <NoticeSection />
+        <ReviewSection />
+        <CommunitySection />
+      </ComuProvider>
     </div>
   );
 };

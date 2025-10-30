@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import { Avatar, ComuSectionHeader } from "../../../ui";
 import { comus, leaders } from "../../../data";
 import type { ComuInfo, Leader } from "../../../types";
+import { useComuContext } from "../../../contexts";
 
-interface LeaderSectionProps {
-  comuId: string;
-}
+interface LeaderSectionProps {}
 
 interface ComuLeader {
   profile: Leader;
   info: ComuInfo;
 }
 
-export const LeaderSection: FC<LeaderSectionProps> = ({ comuId }) => {
+export const LeaderSection: FC<LeaderSectionProps> = ({}) => {
+  const { comuId } = useComuContext();
   const [leader, setLeader] = useState<ComuLeader>();
 
   useEffect(() => {
