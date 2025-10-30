@@ -8,7 +8,7 @@ export const MissionSection = () => {
       <ComuSectionHeader title={title} className="" />
       <div className="p-4 space-y-4">
         {paragraphs.map((p) => (
-          <p>{p}</p>
+          <p key={p}>{p}</p>
         ))}
       </div>
     </section>
