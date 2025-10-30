@@ -3,6 +3,7 @@ import { MainLayout } from "../layouts";
 import {
   BizPage,
   ComuPage,
+  ComuReviewPage,
   LandingPage,
   MainComuPage,
   MakersPage,
@@ -27,7 +28,16 @@ export const router = createBrowserRouter([
           },
           {
             path: "main",
-            element: <MainComuPage />,
+            children: [
+              {
+                index: true,
+                element: <MainComuPage />,
+              },
+              {
+                path: "reviews",
+                element: <ComuReviewPage />,
+              },
+            ],
           },
         ],
       },
