@@ -1,4 +1,4 @@
-import type { Comu } from "../types";
+import type { Comu, ComuNotice, ComuReviewType } from "../types";
 
 export const comus: Comu[] = [
   {
@@ -18,17 +18,35 @@ export const comus: Comu[] = [
           "세계를 변화 시킬 리더를 양성할 수 있는 이상적인 공동체를 연구하고 교육공동체를 구축한다.",
       },
     },
-    origin: `트라이브즈는 2020년에 작은 독서 모임으로 시작했습니다.
-처음에는 단순히 책을 읽고 생각을 나누는 소규모 모임이었지만,
-참여자들의 열정과 적극적인 참여 덕분에 점차 규모가 커졌습니다.
-오늘날 트라이브즈는 다양한 배경의 사람들이 함께 배우고 성장하는 공동체로 발전했습니다.`,
+    leaderships: ["leader2", "leader4", "leader7"],
+    origin: `트라이브즈는 2020년에 작은 독서 모임으로 시작했습니다. 처음에는 단순히 책을 읽고 생각을 나누는 소규모 모임이었지만, 참여자들의 열정과 적극적인 참여 덕분에 점차 규모가 커졌습니다. 오늘날 트라이브즈는 다양한 배경의 사람들이 함께 배우고 성장하는 공동체로 발전했습니다.`,
+    visions: [
+      "✅ 참여자 각자의 잠재력을 최대한 발휘하도록 지원",
+      "✅ 개인과 공동체의 성장을 동시에 추구",
+      "✅ 사회적 영향력을 만들어낼 수 있는 리더 양성",
+    ],
+    missions: [
+      "1️⃣ 참여자 각자의 잠재력을 발휘하도록 지원",
+      "2️⃣ 개인과 공동체의 성장을 동시에 추구",
+      "3️⃣ 사회적 영향력을 만들어낼 수 있는 리더 양성",
+    ],
+    programInfo: {
+      title: "리더십 학습 프로그램",
+      subtitle: "참여자 중심 학습과 실천",
+      description:
+        "참여자들이 실제 프로젝트를 통해 리더십과 협업 능력을 체험합니다.",
+      target: "20~40대 성인",
+      fees: { signupFee: 50000, monthlyFee: 100000, note: "재료비 포함" },
+      schedule: "매주 토요일 오전",
+      location: "서울 강남",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu2", "comu5", "comu7"],
   },
   {
     id: "comu2",
-    header: {
-      title: "Leader",
-      desc: "작은 변화가 세상을 바꾼다",
-    },
+    header: { title: "Leader", desc: "작은 변화가 세상을 바꾼다" },
     leader: {
       leaderId: "leader2",
       info: {
@@ -40,17 +58,34 @@ export const comus: Comu[] = [
           "교육 프로그램과 공동체 활동을 통해 참여자들의 잠재력을 실현한다.",
       },
     },
-    origin: `창립자는 대학 시절 친구들과 함께 자기계발 모임을 시작했습니다.
-처음에는 소규모의 스터디 모임이었지만, 서로의 경험과 지식을 나누면서 점차 방향성이 생겼습니다.
-리더십과 공동체 학습의 중요성을 깨달으며,
-결국 사회적 변화를 만들어낼 수 있는 공동체로 확장되었습니다.`,
+    leaderships: ["leader1", "leader3", "leader5"],
+    origin: `창립자는 대학 시절 친구들과 함께 자기계발 모임을 시작했습니다. 처음에는 소규모의 스터디 모임이었지만, 서로의 경험과 지식을 나누면서 점차 방향성이 생겼습니다. 리더십과 공동체 학습의 중요성을 깨달으며, 결국 사회적 변화를 만들어낼 수 있는 공동체로 확장되었습니다.`,
+    visions: [
+      "✅ 다양한 분야에서 경험과 지식을 공유",
+      "✅ 참여자 간 협력과 네트워킹 강화",
+      "✅ 자기계발과 사회적 변화를 연결하는 리더 양성",
+    ],
+    missions: [
+      "1️⃣ 다양한 분야에서 경험과 지식을 공유",
+      "2️⃣ 참여자 간 협력과 네트워킹 강화",
+    ],
+    programInfo: {
+      title: "자기계발 스터디 프로그램",
+      subtitle: "책과 학습을 통한 성장",
+      description:
+        "참여자들이 지식을 공유하고 협업하며 자기계발 목표를 달성하도록 돕습니다.",
+      target: "대학생 및 직장인",
+      fees: { signupFee: 30000, monthlyFee: 80000, note: "워크북 포함" },
+      schedule: "매주 일요일 오후",
+      location: "서울 마포",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu1", "comu3", "comu6", "comu9"],
   },
   {
     id: "comu3",
-    header: {
-      title: "Leader",
-      desc: "함께 배우며 성장하는 여정",
-    },
+    header: { title: "Leader", desc: "함께 배우며 성장하는 여정" },
     leader: {
       leaderId: "leader3",
       info: {
@@ -61,17 +96,36 @@ export const comus: Comu[] = [
           "혁신적인 학습 경험과 네트워크를 제공하여 공동체의 가치를 높인다.",
       },
     },
-    origin: `리더십과 지식 공유에 관심 있는 사람들이 모여 작은 스터디 그룹으로 시작했습니다.
-모임이 진행될수록 참여자들은 서로의 경험과 아이디어를 공유하며 더 큰 목표를 세웠습니다.
-이 과정에서 자연스럽게 공동체의 가치와 문화가 형성되었고,
-오늘날까지 지속 가능한 학습 공동체로 성장했습니다.`,
+    leaderships: ["leader1", "leader5", "leader9"],
+    origin: `리더십과 지식 공유에 관심 있는 사람들이 모여 작은 스터디 그룹으로 시작했습니다. 모임이 진행될수록 참여자들은 서로의 경험과 아이디어를 공유하며 더 큰 목표를 세웠습니다. 이 과정에서 자연스럽게 공동체의 가치와 문화가 형성되었고, 오늘날까지 지속 가능한 학습 공동체로 성장했습니다.`,
+    visions: [
+      "✅ 차세대 리더의 잠재력을 발휘할 환경 제공",
+      "✅ 혁신적 학습 경험을 통한 공동체 가치 실현",
+      "✅ 참여자 간 아이디어와 경험 공유 활성화",
+    ],
+    missions: [
+      "1️⃣ 차세대 리더의 잠재력을 발휘할 환경 제공",
+      "2️⃣ 혁신적 학습 경험을 통한 공동체 가치 실현",
+      "3️⃣ 참여자 간 아이디어와 경험 공유 활성화",
+      "4️⃣ 실천 중심 프로젝트 진행",
+    ],
+    programInfo: {
+      title: "혁신적 학습 워크숍",
+      subtitle: "아이디어와 경험 공유",
+      description:
+        "참여자들이 프로젝트 기반 학습을 통해 혁신적 아이디어를 실현합니다.",
+      target: "20~40대 직장인",
+      fees: { signupFee: 40000, monthlyFee: 90000 },
+      schedule: "매주 토요일 오후",
+      location: "서울 성동",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu4", "comu5", "comu10"],
   },
   {
     id: "comu4",
-    header: {
-      title: "Leader",
-      desc: "리더십으로 세상을 변화시키다",
-    },
+    header: { title: "Leader", desc: "리더십으로 세상을 변화시키다" },
     leader: {
       leaderId: "leader4",
       info: {
@@ -80,17 +134,34 @@ export const comus: Comu[] = [
         mission: "교육과 활동을 통해 참여자들의 리더십을 구체적으로 개발한다.",
       },
     },
-    origin: `지역 커뮤니티에서 시작된 작은 프로젝트가 기반이 되어,
-리더십과 학습을 결합한 공동체로 발전했습니다.
-참여자들이 서로 가르치고 배우는 과정에서 자연스럽게 문화가 형성되었고,
-지금은 다양한 배경의 사람들이 모여 함께 성장하는 공간이 되었습니다.`,
+    leaderships: ["leader2", "leader5", "leader7"],
+    origin: `지역 커뮤니티에서 시작된 작은 프로젝트가 기반이 되어, 리더십과 학습을 결합한 공동체로 발전했습니다. 참여자들이 서로 가르치고 배우는 과정에서 자연스럽게 문화가 형성되었고, 지금은 다양한 배경의 사람들이 모여 함께 성장하는 공간이 되었습니다.`,
+    visions: [
+      "✅ 핵심 리더를 양성하고 사회적 가치 실현",
+      "✅ 교육과 활동을 통한 실질적 리더십 개발",
+      "✅ 참여자들이 스스로 성장하도록 지원",
+    ],
+    missions: [
+      "1️⃣ 핵심 리더를 양성하고 사회적 가치 실현",
+      "2️⃣ 교육과 활동을 통한 실질적 리더십 개발",
+    ],
+    programInfo: {
+      title: "핵심 리더십 개발 프로그램",
+      subtitle: "실천 중심 리더십 경험",
+      description:
+        "참여자가 리더십 프로젝트를 수행하며 실제 역량을 강화합니다.",
+      target: "20~40대 성인",
+      fees: { signupFee: 60000, monthlyFee: 110000 },
+      schedule: "매주 토요일 오전",
+      location: "서울 송파",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu1", "comu2", "comu3", "comu8"],
   },
   {
     id: "comu5",
-    header: {
-      title: "Leader",
-      desc: "작은 모임에서 큰 변화를",
-    },
+    header: { title: "Leader", desc: "작은 모임에서 큰 변화를" },
     leader: {
       leaderId: "leader5",
       info: {
@@ -99,17 +170,34 @@ export const comus: Comu[] = [
         mission: "함께 학습하며 지속 가능한 공동체 문화를 조성한다.",
       },
     },
-    origin: `창립 초기 5명의 멤버로 시작한 소규모 모임이었습니다.
-처음에는 단순히 책을 읽고 토론하는 활동에 그쳤지만,
-점차 서로의 경험과 아이디어를 나누며 공동 목표를 세우기 시작했습니다.
-현재는 참여자들이 스스로 학습을 주도하며 성장할 수 있는 환경을 갖춘 공동체로 발전했습니다.`,
+    leaderships: ["leader1", "leader3", "leader8"],
+    origin: `창립 초기 5명의 멤버로 시작한 소규모 모임이었습니다. 처음에는 단순히 책을 읽고 토론하는 활동에 그쳤지만, 점차 서로의 경험과 아이디어를 나누며 공동 목표를 세우기 시작했습니다. 현재는 참여자들이 스스로 학습을 주도하며 성장할 수 있는 환경을 갖춘 공동체로 발전했습니다.`,
+    visions: [
+      "✅ 소규모 모임에서 깊이 있는 학습 경험 제공",
+      "✅ 참여자의 역량과 목표 달성 지원",
+      "✅ 지속 가능한 공동체 문화 조성",
+    ],
+    missions: [
+      "1️⃣ 소규모 모임에서 깊이 있는 학습 경험 제공",
+      "2️⃣ 참여자의 역량과 목표 달성 지원",
+      "3️⃣ 지속 가능한 공동체 문화 조성",
+    ],
+    programInfo: {
+      title: "소규모 학습 워크숍",
+      subtitle: "깊이 있는 학습과 성장",
+      description: "소규모 팀 기반 프로젝트로 참여자 역량을 극대화합니다.",
+      target: "20~40대 직장인",
+      fees: { signupFee: 40000, monthlyFee: 90000 },
+      schedule: "매주 일요일 오전",
+      location: "서울 강남",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu6", "comu7", "comu9"],
   },
   {
     id: "comu6",
-    header: {
-      title: "Leader",
-      desc: "배움과 나눔의 연결고리",
-    },
+    header: { title: "Leader", desc: "배움과 나눔의 연결고리" },
     leader: {
       leaderId: "leader6",
       info: {
@@ -118,17 +206,36 @@ export const comus: Comu[] = [
         mission: "리더와 멤버가 함께 목표를 설정하고 성과를 만들어낸다.",
       },
     },
-    origin: `여러 분야의 전문가들이 모여 네트워크를 형성하며 시작된 모임입니다.
-처음에는 소규모 워크숍과 스터디가 중심이었지만,
-참여자들이 서로의 지식과 경험을 공유하면서 공동체의 비전이 구체화되었습니다.
-점차 교육과 문화 실험을 결합한 독특한 학습 공동체로 발전했습니다.`,
+    leaderships: ["leader2", "leader4", "leader10"],
+    origin: `여러 분야의 전문가들이 모여 네트워크를 형성하며 시작된 모임입니다. 처음에는 소규모 워크숍과 스터디가 중심이었지만, 참여자들이 서로의 지식과 경험을 공유하면서 공동체의 비전이 구체화되었습니다. 점차 교육과 문화 실험을 결합한 독특한 학습 공동체로 발전했습니다.`,
+    visions: [
+      "✅ 배움과 나눔을 통해 사회적 영향력 확대",
+      "✅ 목표 설정과 성과 달성을 지원",
+      "✅ 다양한 배경의 멤버가 함께 성장하도록 지원",
+    ],
+    missions: [
+      "1️⃣ 배움과 나눔을 통해 사회적 영향력 확대",
+      "2️⃣ 목표 설정과 성과 달성을 지원",
+      "3️⃣ 다양한 배경의 멤버가 함께 성장하도록 지원",
+      "4️⃣ 참여자 스스로 학습 주도",
+    ],
+    programInfo: {
+      title: "배움과 나눔 프로젝트",
+      subtitle: "사회적 영향력 확대",
+      description:
+        "참여자가 목표를 설정하고 프로젝트를 통해 성과를 창출합니다.",
+      target: "20~40대 성인",
+      fees: { signupFee: 50000, monthlyFee: 100000 },
+      schedule: "매주 토요일 오후",
+      location: "서울 마포",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu2", "comu3", "comu5", "comu10"],
   },
   {
     id: "comu7",
-    header: {
-      title: "Leader",
-      desc: "지식과 경험을 공유하는 리더",
-    },
+    header: { title: "Leader", desc: "지식과 경험을 공유하는 리더" },
     leader: {
       leaderId: "leader7",
       info: {
@@ -137,17 +244,36 @@ export const comus: Comu[] = [
         mission: "공동체 중심의 실천적 학습과 네트워킹을 활성화한다.",
       },
     },
-    origin: `리더 경험이 풍부한 구성원들이 모여 서로의 지식과 경험을 나누는 모임으로 시작했습니다.
-처음에는 단순한 학습과 토론 위주였지만,
-점차 프로젝트와 실천 중심의 활동을 더하며 공동체로서 성장했습니다.
-오늘날 참여자들은 서로 배우고 도전하며 리더십을 실현하는 공간으로 발전했습니다.`,
+    leaderships: ["leader1", "leader3", "leader6"],
+    origin: `리더 경험이 풍부한 구성원들이 모여 서로의 지식과 경험을 나누는 모임으로 시작했습니다. 처음에는 단순한 학습과 토론 위주였지만, 점차 프로젝트와 실천 중심의 활동을 더하며 공동체로서 성장했습니다. 오늘날 참여자들은 서로 배우고 도전하며 리더십을 실현하는 공간으로 발전했습니다.`,
+    visions: [
+      "✅ 리더 경험과 지식을 참여자와 공유",
+      "✅ 실천 중심 학습과 프로젝트 활성화",
+      "✅ 참여자 스스로 리더십을 발휘하도록 동기 부여",
+    ],
+    missions: [
+      "1️⃣ 리더 경험과 지식을 참여자와 공유",
+      "2️⃣ 실천 중심 학습과 프로젝트 활성화",
+      "3️⃣ 참여자 스스로 리더십 발휘",
+      "4️⃣ 새로운 도전과 혁신 촉진",
+      "5️⃣ 참여자 간 피드백 활성화",
+    ],
+    programInfo: {
+      title: "리더 경험 공유 프로그램",
+      subtitle: "실천 중심 리더십",
+      description: "참여자가 프로젝트와 학습을 통해 리더십 역량을 강화합니다.",
+      target: "20~40대 직장인",
+      fees: { signupFee: 50000, monthlyFee: 95000 },
+      schedule: "매주 일요일 오후",
+      location: "서울 성동",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu1", "comu4", "comu8"],
   },
   {
     id: "comu8",
-    header: {
-      title: "Leader",
-      desc: "성장을 만드는 학습 공동체",
-    },
+    header: { title: "Leader", desc: "성장을 만드는 학습 공동체" },
     leader: {
       leaderId: "leader8",
       info: {
@@ -156,17 +282,34 @@ export const comus: Comu[] = [
         mission: "활동과 프로젝트를 통해 실질적 성과를 만들어낸다.",
       },
     },
-    origin: `학생들과 직장인을 대상으로 한 워크숍과 스터디를 결합해 시작한 모임입니다.
-처음에는 참여자가 적었지만, 체계적인 학습 프로그램과 네트워킹 덕분에 점차 확장되었습니다.
-리더와 멤버들이 서로 배우며 성장하는 과정에서 공동체의 가치가 확립되었습니다.
-현재는 다양한 배경의 사람들이 함께 목표를 달성하는 학습 공동체로 자리 잡았습니다.`,
+    leaderships: ["leader1", "leader5", "leader9"],
+    origin: `학생들과 직장인을 대상으로 한 워크숍과 스터디를 결합해 시작한 모임입니다. 처음에는 참여자가 적었지만, 체계적인 학습 프로그램과 네트워킹 덕분에 점차 확장되었습니다. 리더와 멤버들이 서로 배우며 성장하는 과정에서 공동체의 가치가 확립되었습니다. 현재는 다양한 배경의 사람들이 함께 목표를 달성하는 학습 공동체로 자리 잡았습니다.`,
+    visions: [
+      "✅ 참여자 목표 달성을 위한 학습 지원",
+      "✅ 워크숍과 프로젝트를 통한 실질적 성과 창출",
+      "✅ 공동체 가치와 협력 문화 확립",
+    ],
+    missions: [
+      "1️⃣ 참여자 목표 달성을 위한 학습 지원",
+      "2️⃣ 워크숍과 프로젝트를 통한 실질적 성과 창출",
+      "3️⃣ 공동체 가치와 협력 문화 확립",
+    ],
+    programInfo: {
+      title: "목표 달성 학습 프로그램",
+      subtitle: "워크숍과 프로젝트 기반",
+      description: "참여자가 목표를 설정하고 성취를 경험하도록 돕습니다.",
+      target: "대학생 및 직장인",
+      fees: { signupFee: 40000, monthlyFee: 90000 },
+      schedule: "매주 토요일 오전",
+      location: "서울 강남",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu3", "comu6", "comu7", "comu9", "comu10"],
   },
   {
     id: "comu9",
-    header: {
-      title: "Leader",
-      desc: "혁신과 도전의 학습 커뮤니티",
-    },
+    header: { title: "Leader", desc: "혁신과 도전의 학습 커뮤니티" },
     leader: {
       leaderId: "leader9",
       info: {
@@ -175,17 +318,35 @@ export const comus: Comu[] = [
         mission: "프로젝트와 학습 경험을 통해 참여자의 역량을 강화한다.",
       },
     },
-    origin: `혁신과 창의성을 중요시하는 구성원들이 모여 시작된 모임입니다.
-처음에는 실험적인 프로젝트와 아이디어 공유 중심이었지만,
-참여자들의 협력과 피드백을 통해 점차 구조화된 학습 공동체로 발전했습니다.
-지금은 새로운 도전을 추구하며 사회적 변화를 만들어내는 공간으로 자리 잡았습니다.`,
+    leaderships: ["leader3", "leader6", "leader10"],
+    origin: `혁신과 창의성을 중요시하는 구성원들이 모여 시작된 모임입니다. 처음에는 실험적인 프로젝트와 아이디어 공유 중심이었지만, 참여자들의 협력과 피드백을 통해 점차 구조화된 학습 공동체로 발전했습니다. 지금은 새로운 도전을 추구하며 사회적 변화를 만들어내는 공간으로 자리 잡았습니다.`,
+    visions: [
+      "✅ 혁신적 아이디어와 도전적 프로젝트 활성화",
+      "✅ 참여자 간 협력과 지식 공유 촉진",
+      "✅ 사회적 변화를 만들어낼 수 있는 리더 양성",
+    ],
+    missions: [
+      "1️⃣ 혁신적 아이디어와 도전적 프로젝트 활성화",
+      "2️⃣ 참여자 간 협력과 지식 공유 촉진",
+      "3️⃣ 사회적 변화를 만들어낼 수 있는 리더 양성",
+    ],
+    programInfo: {
+      title: "혁신과 도전 프로그램",
+      subtitle: "창의적 프로젝트 실습",
+      description:
+        "참여자가 혁신적 프로젝트를 통해 창의성과 도전 정신을 경험합니다.",
+      target: "20~40대 성인",
+      fees: { signupFee: 50000, monthlyFee: 100000 },
+      schedule: "매주 일요일 오전",
+      location: "서울 마포",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu1", "comu2", "comu5"],
   },
   {
     id: "comu10",
-    header: {
-      title: "Leader",
-      desc: "미래를 준비하는 학습 공동체",
-    },
+    header: { title: "Leader", desc: "미래를 준비하는 학습 공동체" },
     leader: {
       leaderId: "leader10",
       info: {
@@ -196,9 +357,651 @@ export const comus: Comu[] = [
         mission: "학습과 실천 중심의 프로그램을 통해 공동체 가치를 실현한다.",
       },
     },
-    origin: `미래 사회에 필요한 핵심 역량을 개발하기 위해 설립된 공동체입니다.
-처음에는 소규모 학습 모임이었지만, 체계적인 프로그램과 멤버들의 자발적 참여로 성장했습니다.
-참여자들은 서로 도전과 학습을 이어가며 공동체의 목표를 달성하고 있습니다.
-현재는 다양한 분야의 리더가 함께 학습하고 실천하는 공간으로 자리 잡았습니다.`,
+    leaderships: ["leader2", "leader4", "leader8"],
+    origin: `미래 사회에 필요한 핵심 역량을 개발하기 위해 설립된 공동체입니다. 처음에는 소규모 학습 모임이었지만, 체계적인 프로그램과 멤버들의 자발적 참여로 성장했습니다. 참여자들은 서로 도전과 학습을 이어가며 공동체의 목표를 달성하고 있습니다. 현재는 다양한 분야의 리더가 함께 학습하고 실천하는 공간으로 자리 잡았습니다.`,
+    visions: [
+      "✅ 미래 사회 핵심 역량 개발 지원",
+      "✅ 체계적 학습과 실천 중심 프로그램 제공",
+      "✅ 참여자들이 영향력 있는 리더로 성장하도록 지원",
+    ],
+    missions: [
+      "1️⃣ 미래 사회 핵심 역량 개발 지원",
+      "2️⃣ 체계적 학습과 실천 중심 프로그램 제공",
+      "3️⃣ 참여자들이 영향력 있는 리더로 성장하도록 지원",
+      "4️⃣ 참여자 간 경험과 지식 공유 활성화",
+    ],
+    programInfo: {
+      title: "미래 준비 학습 프로그램",
+      subtitle: "핵심 역량 개발과 네트워킹",
+      description: "참여자가 학습과 실천을 통해 리더십과 영향력을 확대합니다.",
+      target: "대학생 및 직장인",
+      fees: { signupFee: 60000, monthlyFee: 120000 },
+      schedule: "매주 토요일 오후",
+      location: "서울 강남",
+      createdAt: "2025-10-30",
+    },
+
+    subComus: ["comu4", "comu7", "comu8", "comu9"],
   },
 ];
+
+export const comuNotices: Record<string, ComuNotice[]> = {
+  comu1: [
+    {
+      id: "comu1_notice1",
+      title: "첫 모임 안내",
+      author: "Leader1",
+      createdAt: "5분 전",
+    },
+    {
+      id: "comu1_notice2",
+      title: "새로운 자료 업로드",
+      author: "Leader1",
+      createdAt: "1시간 전",
+    },
+    {
+      id: "comu1_notice3",
+      title: "이번주 과제 안내",
+      author: "Leader1",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu1_notice4",
+      title: "온라인 세션 공지",
+      author: "Leader1",
+      createdAt: "3일 전",
+    },
+    {
+      id: "comu1_notice5",
+      title: "커뮤니티 이벤트 안내",
+      author: "Leader1",
+      createdAt: "2025-09-01",
+    },
+  ],
+  comu2: [
+    {
+      id: "comu2_notice1",
+      title: "신규 멤버 환영",
+      author: "Leader2",
+      createdAt: "10분 전",
+    },
+    {
+      id: "comu2_notice2",
+      title: "스터디 자료 배포",
+      author: "Leader2",
+      createdAt: "2시간 전",
+    },
+    {
+      id: "comu2_notice3",
+      title: "온라인 모임 안내",
+      author: "Leader2",
+      createdAt: "2일 전",
+    },
+    {
+      id: "comu2_notice4",
+      title: "리더 변경 안내",
+      author: "Leader2",
+      createdAt: "5일 전",
+    },
+    {
+      id: "comu2_notice5",
+      title: "월간 회의 일정",
+      author: "Leader2",
+      createdAt: "2025-09-05",
+    },
+    {
+      id: "comu2_notice6",
+      title: "자료 업로드",
+      author: "Leader2",
+      createdAt: "2025-09-10",
+    },
+  ],
+  comu3: [
+    {
+      id: "comu3_notice1",
+      title: "첫 모임 공지",
+      author: "Leader3",
+      createdAt: "2분 전",
+    },
+    {
+      id: "comu3_notice2",
+      title: "과제 제출 안내",
+      author: "Leader3",
+      createdAt: "30분 전",
+    },
+    {
+      id: "comu3_notice3",
+      title: "온라인 세션 링크 공유",
+      author: "Leader3",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu3_notice4",
+      title: "스터디 자료 업로드",
+      author: "Leader3",
+      createdAt: "4일 전",
+    },
+    {
+      id: "comu3_notice5",
+      title: "커뮤니티 이벤트 일정",
+      author: "Leader3",
+      createdAt: "2025-09-02",
+    },
+  ],
+  comu4: [
+    {
+      id: "comu4_notice1",
+      title: "리더십 강연 안내",
+      author: "Leader4",
+      createdAt: "15분 전",
+    },
+    {
+      id: "comu4_notice2",
+      title: "참여자 프로젝트 모집",
+      author: "Leader4",
+      createdAt: "3시간 전",
+    },
+    {
+      id: "comu4_notice3",
+      title: "온라인 토론 공지",
+      author: "Leader4",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu4_notice4",
+      title: "학습 자료 업로드",
+      author: "Leader4",
+      createdAt: "5일 전",
+    },
+    {
+      id: "comu4_notice5",
+      title: "커뮤니티 피드백 공유",
+      author: "Leader4",
+      createdAt: "2025-09-08",
+    },
+  ],
+  comu5: [
+    {
+      id: "comu5_notice1",
+      title: "모임 일정 안내",
+      author: "Leader5",
+      createdAt: "7분 전",
+    },
+    {
+      id: "comu5_notice2",
+      title: "새로운 학습 자료 배포",
+      author: "Leader5",
+      createdAt: "1시간 전",
+    },
+    {
+      id: "comu5_notice3",
+      title: "온라인 세션 링크 공유",
+      author: "Leader5",
+      createdAt: "2일 전",
+    },
+    {
+      id: "comu5_notice4",
+      title: "과제 제출 마감 안내",
+      author: "Leader5",
+      createdAt: "4일 전",
+    },
+    {
+      id: "comu5_notice5",
+      title: "커뮤니티 모임 피드백",
+      author: "Leader5",
+      createdAt: "2025-09-03",
+    },
+    {
+      id: "comu5_notice6",
+      title: "월간 목표 안내",
+      author: "Leader5",
+      createdAt: "2025-09-12",
+    },
+  ],
+  comu6: [
+    {
+      id: "comu6_notice1",
+      title: "신규 참여자 안내",
+      author: "Leader6",
+      createdAt: "3분 전",
+    },
+    {
+      id: "comu6_notice2",
+      title: "스터디 자료 업로드",
+      author: "Leader6",
+      createdAt: "2시간 전",
+    },
+    {
+      id: "comu6_notice3",
+      title: "온라인 세션 공지",
+      author: "Leader6",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu6_notice4",
+      title: "커뮤니티 활동 안내",
+      author: "Leader6",
+      createdAt: "6일 전",
+    },
+    {
+      id: "comu6_notice5",
+      title: "월간 회의 일정",
+      author: "Leader6",
+      createdAt: "2025-09-06",
+    },
+  ],
+  comu7: [
+    {
+      id: "comu7_notice1",
+      title: "프로젝트 모집 안내",
+      author: "Leader7",
+      createdAt: "1분 전",
+    },
+    {
+      id: "comu7_notice2",
+      title: "참여자 발표 일정",
+      author: "Leader7",
+      createdAt: "1시간 전",
+    },
+    {
+      id: "comu7_notice3",
+      title: "온라인 세션 안내",
+      author: "Leader7",
+      createdAt: "2일 전",
+    },
+    {
+      id: "comu7_notice4",
+      title: "스터디 자료 배포",
+      author: "Leader7",
+      createdAt: "5일 전",
+    },
+    {
+      id: "comu7_notice5",
+      title: "커뮤니티 피드백 공유",
+      author: "Leader7",
+      createdAt: "2025-09-09",
+    },
+  ],
+  comu8: [
+    {
+      id: "comu8_notice1",
+      title: "신규 모임 안내",
+      author: "Leader8",
+      createdAt: "8분 전",
+    },
+    {
+      id: "comu8_notice2",
+      title: "학습 자료 업로드",
+      author: "Leader8",
+      createdAt: "3시간 전",
+    },
+    {
+      id: "comu8_notice3",
+      title: "온라인 세션 안내",
+      author: "Leader8",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu8_notice4",
+      title: "커뮤니티 이벤트 안내",
+      author: "Leader8",
+      createdAt: "4일 전",
+    },
+    {
+      id: "comu8_notice5",
+      title: "월간 회의 일정",
+      author: "Leader8",
+      createdAt: "2025-09-04",
+    },
+  ],
+  comu9: [
+    {
+      id: "comu9_notice1",
+      title: "참여자 환영 안내",
+      author: "Leader9",
+      createdAt: "2분 전",
+    },
+    {
+      id: "comu9_notice2",
+      title: "프로젝트 자료 배포",
+      author: "Leader9",
+      createdAt: "1시간 전",
+    },
+    {
+      id: "comu9_notice3",
+      title: "온라인 모임 공지",
+      author: "Leader9",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu9_notice4",
+      title: "커뮤니티 피드백 공유",
+      author: "Leader9",
+      createdAt: "5일 전",
+    },
+    {
+      id: "comu9_notice5",
+      title: "월간 목표 안내",
+      author: "Leader9",
+      createdAt: "2025-09-07",
+    },
+  ],
+  comu10: [
+    {
+      id: "comu10_notice1",
+      title: "신규 참여자 안내",
+      author: "Leader10",
+      createdAt: "6분 전",
+    },
+    {
+      id: "comu10_notice2",
+      title: "스터디 자료 업로드",
+      author: "Leader10",
+      createdAt: "2시간 전",
+    },
+    {
+      id: "comu10_notice3",
+      title: "온라인 세션 공지",
+      author: "Leader10",
+      createdAt: "1일 전",
+    },
+    {
+      id: "comu10_notice4",
+      title: "커뮤니티 이벤트 안내",
+      author: "Leader10",
+      createdAt: "3일 전",
+    },
+    {
+      id: "comu10_notice5",
+      title: "월간 회의 일정",
+      author: "Leader10",
+      createdAt: "2025-09-05",
+    },
+    {
+      id: "comu10_notice6",
+      title: "자료 업로드",
+      author: "Leader10",
+      createdAt: "2025-09-12",
+    },
+  ],
+};
+
+export const comuReviews: Record<string, ComuReviewType[]> = {
+  comu1: [
+    {
+      reviewId: "r001",
+      userId: "u001",
+      username: "책사랑러",
+      commentDate: "2025-10-30 14:23",
+      clubName: "사피엔스",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 5,
+      title: "정말 유익한 모임!",
+      content:
+        "이번 모임은 특히 토론이 흥미로웠습니다. 다양한 관점을 들을 수 있어 좋았습니다.",
+      meta: { loves: ["u002", "u003"], likes: ["u004"], laughs: ["u005"] },
+    },
+    {
+      reviewId: "r002",
+      userId: "u002",
+      username: "지식탐험가",
+      commentDate: "2025-10-29 18:12",
+      clubName: "사피엔스",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 5,
+      content:
+        "리더님의 설명이 명확하고 이해하기 쉬웠어요. 실습도 재미있었습니다.",
+      meta: { likes: ["u001"], smiles: ["u003", "u004"] },
+    },
+  ],
+  comu2: [
+    {
+      reviewId: "r003",
+      userId: "u003",
+      username: "책벌레",
+      commentDate: "2025-10-30 11:05",
+      clubName: "호모 데우스",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 4,
+      content: "새로운 시각을 많이 얻었어요. 다음 모임이 기다려집니다.",
+      meta: { loves: ["u002"], surprises: ["u004"] },
+    },
+    {
+      reviewId: "r004",
+      userId: "u004",
+      username: "독서마니아",
+      commentDate: "2025-10-28 20:45",
+      clubName: "호모 데우스",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 4,
+      content:
+        "토론이 활발해서 즐거웠습니다. 다른 멤버들의 의견이 인상적이었어요.",
+      meta: { laughs: ["u003"], likes: ["u001", "u005"] },
+    },
+  ],
+  comu3: [
+    {
+      reviewId: "r005",
+      userId: "u005",
+      username: "책사냥꾼",
+      commentDate: "2025-10-30 09:30",
+      clubName: "총, 균, 쇠",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "역사와 과학의 연결점을 쉽게 이해할 수 있어서 좋았습니다.",
+      meta: { loves: ["u002"], smiles: ["u001", "u003"] },
+    },
+    {
+      reviewId: "r006",
+      userId: "u006",
+      username: "호기심쟁이",
+      commentDate: "2025-10-29 17:10",
+      clubName: "총, 균, 쇠",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "리더님의 사례 중심 설명이 도움이 많이 되었어요.",
+      meta: { likes: ["u005"], surprises: ["u001"] },
+    },
+    {
+      reviewId: "r007",
+      userId: "u007",
+      username: "책읽는곰",
+      commentDate: "2025-10-28 15:55",
+      clubName: "총, 균, 쇠",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "모임 분위기가 좋고 서로 배우는 느낌이 강했습니다.",
+      meta: { smiles: ["u006"], questionables: ["u004"] },
+    },
+  ],
+  comu4: [
+    {
+      reviewId: "r008",
+      userId: "u008",
+      username: "독서광",
+      commentDate: "2025-10-30 13:10",
+      clubName: "생각의 지도",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 5,
+      content: "지도처럼 생각을 정리해 볼 수 있는 좋은 시간이었습니다.",
+      meta: { loves: ["u009"], likes: ["u007"] },
+    },
+    {
+      reviewId: "r009",
+      userId: "u009",
+      username: "지식러",
+      commentDate: "2025-10-29 21:45",
+      clubName: "생각의 지도",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 5,
+      content: "모임에서 얻은 인사이트가 다음 공부에 큰 도움이 되었습니다.",
+      meta: { smiles: ["u008"], laughs: ["u007"] },
+    },
+  ],
+  comu5: [
+    {
+      reviewId: "r010",
+      userId: "u010",
+      username: "책중독자",
+      commentDate: "2025-10-30 12:00",
+      clubName: "21세기 자본",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 7,
+      content: "경제 흐름과 사회 구조를 이해하는 데 큰 도움이 되었어요.",
+      meta: { loves: ["u011"], likes: ["u012"] },
+    },
+    {
+      reviewId: "r011",
+      userId: "u011",
+      username: "지적호기심",
+      commentDate: "2025-10-29 14:30",
+      clubName: "21세기 자본",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 7,
+      content: "복잡한 내용을 쉽게 풀어주셔서 이해가 빨랐습니다.",
+      meta: { laughs: ["u010"], smiles: ["u012"] },
+    },
+    {
+      reviewId: "r012",
+      userId: "u012",
+      username: "책사랑러",
+      commentDate: "2025-10-28 16:00",
+      clubName: "21세기 자본",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 7,
+      content: "토론 중심으로 진행되어서 재미있게 참여했습니다.",
+      meta: { likes: ["u010"], questionables: ["u011"] },
+    },
+  ],
+  comu6: [
+    {
+      reviewId: "r013",
+      userId: "u013",
+      username: "배움열정러",
+      commentDate: "2025-10-30 10:20",
+      clubName: "트라이브즈 기초",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 4,
+      content: "커뮤니티 활동을 이해하는데 많은 도움이 되었습니다.",
+      meta: { loves: ["u014"], smiles: ["u015"] },
+    },
+    {
+      reviewId: "r014",
+      userId: "u014",
+      username: "토론왕",
+      commentDate: "2025-10-29 18:40",
+      clubName: "트라이브즈 기초",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 4,
+      content: "리더님의 안내가 명확했고, 토론도 흥미로웠습니다.",
+      meta: { likes: ["u013"], laughs: ["u015"] },
+    },
+  ],
+  comu7: [
+    {
+      reviewId: "r015",
+      userId: "u015",
+      username: "독서광팬",
+      commentDate: "2025-10-30 09:50",
+      clubName: "리더십 모임",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "리더십에 대한 새로운 관점을 배울 수 있었어요.",
+      meta: { loves: ["u016"], surprises: ["u017"] },
+    },
+    {
+      reviewId: "r016",
+      userId: "u016",
+      username: "책토론러",
+      commentDate: "2025-10-29 15:20",
+      clubName: "리더십 모임",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "토론과 실습 중심이라 참여도가 높았습니다.",
+      meta: { smiles: ["u015"], likes: ["u017"] },
+    },
+  ],
+  comu8: [
+    {
+      reviewId: "r017",
+      userId: "u017",
+      username: "책읽는소년",
+      commentDate: "2025-10-30 11:15",
+      clubName: "미래 준비",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 5,
+      content: "미래 사회에 필요한 역량을 고민할 수 있어 좋았습니다.",
+      meta: { loves: ["u018"], likes: ["u019"] },
+    },
+    {
+      reviewId: "r018",
+      userId: "u018",
+      username: "독서조아",
+      commentDate: "2025-10-29 12:40",
+      clubName: "미래 준비",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 5,
+      content: "다양한 관점을 나누면서 배움이 많았습니다.",
+      meta: { smiles: ["u017"], laughs: ["u019"] },
+    },
+  ],
+  comu9: [
+    {
+      reviewId: "r019",
+      userId: "u019",
+      username: "호기심책쟁이",
+      commentDate: "2025-10-30 14:05",
+      clubName: "혁신과 변화",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 4,
+      content: "참여자들이 열정적이라 배움이 컸습니다.",
+      meta: { loves: ["u020"], likes: ["u021"] },
+    },
+    {
+      reviewId: "r020",
+      userId: "u020",
+      username: "책과사람",
+      commentDate: "2025-10-29 13:50",
+      clubName: "혁신과 변화",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 4,
+      content: "토론이 풍부하고 의견 공유가 활발했습니다.",
+      meta: { smiles: ["u019"], surprises: ["u021"] },
+    },
+  ],
+  comu10: [
+    {
+      reviewId: "r021",
+      userId: "u021",
+      username: "독서천재",
+      commentDate: "2025-10-30 10:45",
+      clubName: "창의적 사고",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "아이디어 발상과 문제 해결 연습이 재미있었습니다.",
+      meta: { loves: ["u022"], likes: ["u023"] },
+    },
+    {
+      reviewId: "r022",
+      userId: "u022",
+      username: "지식열정러",
+      commentDate: "2025-10-29 16:30",
+      clubName: "창의적 사고",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "실습과 토론이 적절히 조화되어 흥미로웠습니다.",
+      meta: { smiles: ["u021"], laughs: ["u023"] },
+    },
+    {
+      reviewId: "r023",
+      userId: "u023",
+      username: "책사냥꾼",
+      commentDate: "2025-10-28 17:15",
+      clubName: "창의적 사고",
+      clubNickname: "트레바리 강남 History Club",
+      attendanceCount: 6,
+      content: "다양한 관점에서 아이디어를 나눌 수 있어 좋았습니다.",
+      meta: { questionables: ["u021"], likes: ["u022"] },
+    },
+  ],
+};

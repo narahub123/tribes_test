@@ -1,13 +1,25 @@
-import { MainComu } from "../../../data";
-import { ComuSectionHeader } from "../ComuSectionHeader";
+import { useEffect, useState } from "react";
+import { ComuSectionHeader } from "../../../ui";
+import { comus } from "../../../data";
+import { useComuContext } from "../../../contexts";
 
 export const VisionSection = () => {
-  const { title, text } = MainComu.vision;
+  const { comuId } = useComuContext();
+  const [visions, setVisions] = useState<string[]>([]);
+
+  useEffect(() => {
+    const visions = comus.filter((c) => c.id === comuId)[0].visions;
+
+    setVisions(visions);
+  }, [comuId]);
+
   return (
     <section>
-      <ComuSectionHeader title={title} />
+      <ComuSectionHeader title={"비전"} />
       <div className="p-4">
-        <p>{text}</p>
+        {visions.map((v) => (
+          <p key={v}>{v}</p>
+        ))}
       </div>
     </section>
   );

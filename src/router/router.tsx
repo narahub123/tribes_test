@@ -49,7 +49,16 @@ export const router = createBrowserRouter([
               },
               {
                 path: ":id",
-                element: <SubComuLayout />,
+                children: [
+                  {
+                    index: true,
+                    element: <SubComuLayout />,
+                  },
+                  {
+                    path: "reviews",
+                    element: <ComuReviewPage />,
+                  },
+                ],
               },
             ],
           },

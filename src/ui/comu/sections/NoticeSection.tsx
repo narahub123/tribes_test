@@ -1,14 +1,25 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { MainComu, notices } from "../../../data";
-import { ComuSectionHeader } from "../ComuSectionHeader";
+import { comuNotices } from "../../../data";
+import { ComuSectionHeader } from "../../../ui";
+import { useComuContext } from "../../../contexts";
+import type { ComuNotice } from "../../../types";
 
 export const NoticeSection = () => {
-  const { title } = MainComu.notice;
+  const { comuId } = useComuContext();
+  const [notices, setNotices] = useState<ComuNotice[]>([]);
+
+  useEffect(() => {
+    const notices = comuNotices[comuId];
+
+    setNotices(notices);
+  }, [comuId]);
 
   const filtered = notices.slice(0, 5);
+
   return (
     <section>
-      <ComuSectionHeader title={title} />
+      <ComuSectionHeader title={"공지사항"} />
       <div className="py-4">
         <table className="w-full">
           <thead>
@@ -28,7 +39,7 @@ export const NoticeSection = () => {
                   <td>
                     <Link to={`/notices/main/${id}`}>{title}</Link>
                   </td>
-                  <td>{author}</td>
+                  <td>{author.includes("lead") ? "리더" : "운영자"}</td>
                   <td>{createdAt}</td>
                 </tr>
               );

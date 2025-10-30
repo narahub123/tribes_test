@@ -24,7 +24,9 @@ export const LeadershipSection: FC<LeadershipSectionProps> = ({}) => {
     setLeaderships(leaderships);
   }, [comuId]);
 
-  // const { title, leaders } = MainComu.leadership;
+  console.log(comuId);
+  console.log(leaderships);
+
   return (
     <section>
       <ComuSectionHeader title={"Leadership"} />

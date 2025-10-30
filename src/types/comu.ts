@@ -40,7 +40,7 @@ export interface ComuReviewType {
   username: string; // 유저 닉네임 (예: "책사랑러")
   profileImage?: string; // 프로필 이미지 경로 또는 URL (예: "/profiles/user1.png")
   commentDate: string; // 작성일시 (ISO-like string, "YYYY-MM-DD HH:mm")
-  clueName: string; // 이번 모임에서 다룬 책/주제명 (예: "사피엔스")
+  clubName: string; // 이번 모임에서 다룬 책/주제명 (예: "사피엔스")
   clubNickname: string; // 소속 클럽/모임 닉네임 (예: "트레바리 강남 History Club")
   attendanceCount: number; // 참석 인원 수 또는 본인 참석 횟수(요청 맥락에 따름)
   title?: string; // 후기 제목
@@ -64,10 +64,7 @@ export interface Fees {
   note?: string; // 추가 설명(선택)
 }
 
-export interface SubComuCardType {
-  id: string; // ex: "p001"
-  hostName: string; // ex: "TOM Jang"
-  hostAvatar?: string; // 이미지 경로 또는 URL
+export interface ProgramInfoType {
   title: string; // 프로그램 제목
   subtitle?: string; // 한줄 소개
   description?: string; // 카드 본문 설명
@@ -78,7 +75,11 @@ export interface SubComuCardType {
   createdAt?: string; // 생성일 (선택, "YYYY-MM-DD")
 }
 
-export interface SubComuType {}
+export interface SubComuCardType extends ProgramInfoType {
+  id: string;
+  hostAvatar: string;
+  hostName: string;
+}
 
 export type ComuInfoType = "intro" | "vision" | "mission";
 
@@ -96,8 +97,19 @@ export type Comu = {
   };
   leaderships?: string[];
   origin: string;
+  visions: string[];
+  missions: string[];
+  programInfo: ProgramInfoType;
+  subComus: string[];
 };
 
 export type ComuContextType = {
   comuId: string;
+};
+
+export type ComuNotice = {
+  id: string;
+  title: string;
+  author: string;
+  createdAt: string; // ex: "5분 전", "2일 전", "2025-09-01"
 };
