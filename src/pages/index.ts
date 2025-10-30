@@ -4,3 +4,4 @@ export * from "./BizPage";
 export * from "./MakersPage";
 export * from "./MainComuPage";
 export * from "./ComuReviewPage";
+export * from "./SubComuPage";

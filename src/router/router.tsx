@@ -7,6 +7,7 @@ import {
   LandingPage,
   MainComuPage,
   MakersPage,
+  SubComuPage,
 } from "../pages";
 
 export const router = createBrowserRouter([
@@ -44,7 +45,7 @@ export const router = createBrowserRouter([
             children: [
               {
                 index: true,
-                element: <>서브 목록</>,
+                element: <SubComuPage />,
               },
               {
                 path: ":id",
