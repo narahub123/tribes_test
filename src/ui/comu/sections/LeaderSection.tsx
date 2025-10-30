@@ -1,37 +1,30 @@
 import { useEffect, useState, type FC } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Avatar, ComuSectionHeader } from "../../../ui";
 import { comus, leaders } from "../../../data";
 import type { ComuInfo, Leader } from "../../../types";
 
-interface LeaderSectionProps {}
+interface LeaderSectionProps {
+  comuId: string;
+}
 
 interface ComuLeader {
   profile: Leader;
   info: ComuInfo;
 }
 
-export const LeaderSection: FC<LeaderSectionProps> = ({}) => {
-  const { pathname } = useLocation();
+export const LeaderSection: FC<LeaderSectionProps> = ({ comuId }) => {
   const [leader, setLeader] = useState<ComuLeader>();
 
   useEffect(() => {
-    if (!pathname) return;
-    let id = "";
-    if (pathname.includes("subs")) {
-      id = pathname.split("subs/")[1];
-    } else {
-      id = "comu1";
-    }
-
-    const comuLeader = comus.filter((c) => c.id === id)[0].leader;
+    const comuLeader = comus.filter((c) => c.id === comuId)[0].leader;
     const leader = leaders.filter((l) => l.id === comuLeader.leaderId)[0];
 
     setLeader({
       profile: leader,
       info: comuLeader.info,
     });
-  }, [pathname]);
+  }, [comuId]);
 
   if (!leader) return null;
 

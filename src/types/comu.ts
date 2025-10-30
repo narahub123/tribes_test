@@ -94,4 +94,5 @@ export type Comu = {
     leaderId: string;
     info: ComuInfo;
   };
+  leaderships?: string[];
 };

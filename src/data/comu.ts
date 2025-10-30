@@ -18,6 +18,7 @@ export const comus: Comu[] = [
           "세계를 변화 시킬 리더를 양성할 수 있는 이상적인 공동체를 연구하고 교육공동체를 구축한다.",
       },
     },
+    leaderships: ["leader2", "leader3", "leader4"],
   },
   {
     id: "comu2",
@@ -36,6 +37,7 @@ export const comus: Comu[] = [
           "교육 프로그램과 공동체 활동을 통해 참여자들의 잠재력을 실현한다.",
       },
     },
+    leaderships: ["leader3", "leader4", "leader7"],
   },
   {
     id: "comu3",

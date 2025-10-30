@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import {
   ReviewSection,
   CommunitySection,
@@ -10,8 +11,20 @@ import {
   VisionSection,
   SubComuSection,
 } from "../ui";
+import { useEffect, useState } from "react";
 
 export const MainComuPage = () => {
+  const { pathname } = useLocation();
+  const [comuId, setComuId] = useState("comu1");
+
+  useEffect(() => {
+    if (!pathname) return;
+
+    const comuId = pathname.includes("subs/")
+      ? pathname.split("subs/")[1]
+      : "comu1";
+    setComuId(comuId);
+  }, [pathname]);
   return (
     <div className="p-4">
       <header className="relative">
@@ -19,8 +32,8 @@ export const MainComuPage = () => {
         <PrevButton className="absolute top-2 left-0" />
       </header>
       <main>
-        <LeaderSection />
-        <LeadershipSection />
+        <LeaderSection comuId={comuId} />
+        <LeadershipSection comuId={comuId} />
         <OriginSection />
         <VisionSection />
         <MissionSection />
