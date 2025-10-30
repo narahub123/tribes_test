@@ -1,7 +1,12 @@
+import { leader1, leader2, leader3, leader4 } from "../assets";
+
 export const MainComu = {
   title: "세상을 변화 시키는 한 사람의 위대한 변화",
   leader: {
+    title: "Leader",
     profile: {
+      id: "leader1",
+      avatarUrl: leader1,
       name: "장주영",
       role: "기획자",
       job: "트라이브즈 기획대표",
@@ -23,5 +28,31 @@ export const MainComu = {
 교육공동체를 구축하여 문화와 교육을 실험하고 전파한다.`,
       },
     },
+  },
+  leadership: {
+    title: "Leadership",
+    leaders: [
+      {
+        id: "leader2",
+        avatarUrl: leader2,
+        role: "Planner",
+        name: "류하온",
+        job: "TRIBES 기획자",
+      },
+      {
+        id: "leader3",
+        avatarUrl: leader3,
+        role: "Helper",
+        name: "이미란",
+        job: "TRIBES 이사",
+      },
+      {
+        id: "leader4",
+        avatarUrl: leader4,
+        role: "Speaker",
+        name: "장노아",
+        job: "TRIBES PM",
+      },
+    ],
   },
 };
