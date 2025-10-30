@@ -1,6 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainLayout } from "../layouts";
-import { BizPage, ComuPage, LandingPage, MakersPage } from "../pages";
+import {
+  BizPage,
+  ComuPage,
+  LandingPage,
+  MainComuPage,
+  MakersPage,
+} from "../pages";
 
 export const router = createBrowserRouter([
   {
@@ -13,7 +19,17 @@ export const router = createBrowserRouter([
       },
       {
         path: "/comu",
-        element: <ComuPage />,
+
+        children: [
+          {
+            index: true,
+            element: <ComuPage />,
+          },
+          {
+            path: "main",
+            element: <MainComuPage />,
+          },
+        ],
       },
       {
         path: "/biz",
