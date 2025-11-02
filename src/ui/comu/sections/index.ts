@@ -8,3 +8,6 @@ export * from "./HeroSection";
 export * from "./ComuProfileSection";
 export * from "./FAQSection";
 export * from "./ActivitySection";
+export * from "./ScheduleSection";
+export * from "./BookSection";
+export * from "./ArchiveSection";
