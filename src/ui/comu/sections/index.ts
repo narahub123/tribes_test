@@ -11,3 +11,5 @@ export * from "./ActivitySection";
 export * from "./ScheduleSection";
 export * from "./BookSection";
 export * from "./ArchiveSection";
+export * from "./TrackerSection";
+export * from "./MemberSection";

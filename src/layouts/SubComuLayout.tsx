@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   CommunitySection,
   LeaderSection,
@@ -11,6 +11,9 @@ import {
   ActivitySection,
   BookSection,
   ArchiveSection,
+  TrackerSection,
+  MemberSection,
+  Icon,
 } from "../ui";
 import { ComuProvider } from "../contexts";
 import { ApplyButton, ApplyModal } from "../ui/comu/subComu";
@@ -40,20 +43,31 @@ export const SubComuLayout = () => {
   return (
     <div>
       <ApplyModal isOpen={isOpen} onClose={handleClose} />
-      <div className="flex justify-center">
+      <div className="flex justify-center relative">
         <h2 className="font-bold text-2xl p-4">서브 커뮤</h2>
+
+        <Link to="/comu/main">
+          <button
+            className="text-2xl absolute top-5 left-4 cursor-pointer"
+            title="메인 코뮤로"
+          >
+            <Icon name="left" />
+          </button>
+        </Link>
       </div>
 
       <ComuProvider value={{ comuId }}>
         <LeaderSection />
         <LeadershipSection />
         <ComuProfileSection />
+        <BookSection />
+        <ScheduleSection />
         <NoticeSection />
         <ReviewSection />
-        <CommunitySection />
-        <ScheduleSection />
         <ActivitySection />
-        <BookSection />
+        <CommunitySection />
+        <MemberSection />
+        <TrackerSection />
         <ArchiveSection />
         <ApplyButton onClick={handleToggle} />
       </ComuProvider>
