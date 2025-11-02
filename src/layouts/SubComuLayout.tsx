@@ -14,6 +14,7 @@ import {
   TrackerSection,
   MemberSection,
   Icon,
+  ProgramInfoSection,
 } from "../ui";
 import { ComuProvider } from "../contexts";
 import { ApplyButton, ApplyModal } from "../ui/comu/subComu";
@@ -60,6 +61,7 @@ export const SubComuLayout = () => {
         <LeaderSection />
         <LeadershipSection />
         <ComuProfileSection />
+        <ProgramInfoSection />
         <BookSection />
         <ScheduleSection />
         <NoticeSection />

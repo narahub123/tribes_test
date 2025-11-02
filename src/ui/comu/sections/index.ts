@@ -13,3 +13,4 @@ export * from "./BookSection";
 export * from "./ArchiveSection";
 export * from "./TrackerSection";
 export * from "./MemberSection";
+export * from "./ProgramInfoSection";
