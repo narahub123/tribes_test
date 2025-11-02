@@ -27,8 +27,14 @@ export const NoticeTable: FC<NoticeTableProps> = ({ notices, comuId }) => {
               <td>
                 <Link
                   to={`/comu/${
-                    comuId === "comu1" ? "main" : `${comuId}`
-                  }/notices/${id}`}
+                    comuId === "comu1"
+                      ? `main/notices/${id}`
+                      : comuId === "main"
+                      ? `main/notices/${id}`
+                      : comuId.includes("subs/")
+                      ? `${comuId}/notices/${id}`
+                      : `subs/${comuId}/notices/${id}`
+                  }`}
                 >
                   {title}
                 </Link>
