@@ -8,6 +8,9 @@ import activity2 from "./activity2.jpg";
 import activity3 from "./activity3.jpg";
 import activity4 from "./activity4.jpg";
 import activity5 from "./activity5.jpg";
+import book1 from "./book1.avif";
+import book2 from "./book2.avif";
+import book3 from "./book3.avif";
 
 export {
   leader1,
@@ -20,4 +23,7 @@ export {
   activity3,
   activity4,
   activity5,
+  book1,
+  book2,
+  book3,
 };

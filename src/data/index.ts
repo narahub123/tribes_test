@@ -6,3 +6,4 @@ export * from "./comu";
 export * from "./notices";
 export * from "./faq";
 export * from "./activities";
+export * from "./dates";
