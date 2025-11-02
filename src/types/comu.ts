@@ -85,6 +85,10 @@ export type ComuInfoType = "intro" | "vision" | "mission";
 
 export type ComuInfo = Record<ComuInfoType, string>;
 
+export type LeaderInfoType = "education" | "careerHistory" | "beliefs";
+
+export type LeaderInfo = Record<LeaderInfoType, any>;
+
 export interface HeroType {
   imgUrl: string;
   title: string;
@@ -96,7 +100,7 @@ export type Comu = {
   hero: HeroType;
   leader: {
     leaderId: string;
-    info: ComuInfo;
+    info: LeaderInfo;
   };
   leaderships?: string[];
   origin: string;
