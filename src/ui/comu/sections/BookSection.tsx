@@ -19,7 +19,7 @@ export const BookSection = () => {
           aria-hidden={true}
           className="w-full absolute top-0 left-0 -z-10 object-cover filter blur-lg"
         />
-        <div className="flex gap-2 absolute right-4 top-0">
+        <div className="flex gap-2 absolute right-4 top-4">
           {books.map((b) => {
             const [year, month] = b.schedule.split("-");
             const isSelected = b.id === selection;
