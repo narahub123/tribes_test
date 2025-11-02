@@ -15,7 +15,7 @@ export const ActivityImageModal: FC<ActivityImageModalProps> = ({
 
   const { imgUrl } = activity;
   return (
-    <div className="fixed top-0 left-0">
+    <div className="fixed top-0 left-0 z-30">
       <div
         className="bg-black opacity-50 w-screen h-screen"
         onClick={onClose}

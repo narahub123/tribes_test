@@ -13,7 +13,7 @@ export const ApplyModal: FC<ApplyModalProps> = ({ isOpen, onClose }) => {
       <div className="w-full h-full bg-black opacity-50" onClick={onClose} />
       <div className="w-[80%] min-h-[80%] bg-white absolute top-[50%] left-[50%] transform -translate-[50%] rounded-xl">
         <button
-          className="absolute top-4 right-4 cursor-pointer"
+          className="absolute top-4 right-4 cursor-pointer text-2xl"
           onClick={onClose}
         >
           <Icon name="close" />
