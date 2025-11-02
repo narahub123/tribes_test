@@ -95,17 +95,20 @@ export interface HeroType {
   desc: string;
 }
 
+export interface ComuProfileType {
+  origin: string;
+  visions: string[];
+  missions: string[];
+}
+
 export type Comu = {
   id: string;
   hero: HeroType;
   leader: {
     leaderId: string;
-    info: LeaderInfo;
   };
   leaderships?: string[];
-  origin: string;
-  visions: string[];
-  missions: string[];
+  comuProfile: ComuProfileType;
   programInfo: ProgramInfoType;
   subComus: string[];
 };

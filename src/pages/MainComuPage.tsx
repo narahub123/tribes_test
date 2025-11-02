@@ -4,13 +4,11 @@ import {
   CommunitySection,
   LeaderSection,
   LeadershipSection,
-  MissionSection,
   NoticeSection,
-  OriginSection,
   PrevButton,
-  VisionSection,
   SubComuSection,
   HeroSection,
+  ComuProfileSection,
 } from "../ui";
 import { useEffect, useState } from "react";
 import { ComuProvider } from "../contexts";
@@ -38,9 +36,7 @@ export const MainComuPage = () => {
           <HeroSection />
           <LeaderSection />
           <LeadershipSection />
-          <OriginSection />
-          <VisionSection />
-          <MissionSection />
+          <ComuProfileSection />
           <NoticeSection />
           <CommunitySection />
           <ReviewSection />

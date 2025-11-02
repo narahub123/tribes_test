@@ -4,11 +4,9 @@ import {
   CommunitySection,
   LeaderSection,
   LeadershipSection,
-  MissionSection,
   NoticeSection,
-  OriginSection,
   ReviewSection,
-  VisionSection,
+  ComuProfileSection,
 } from "../ui";
 import { ComuProvider } from "../contexts";
 
@@ -34,9 +32,7 @@ export const SubComuLayout = () => {
       <ComuProvider value={{ comuId }}>
         <LeaderSection />
         <LeadershipSection />
-        <OriginSection />
-        <VisionSection />
-        <MissionSection />
+        <ComuProfileSection />
         <NoticeSection />
         <ReviewSection />
         <CommunitySection />
