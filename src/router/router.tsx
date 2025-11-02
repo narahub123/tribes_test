@@ -65,6 +65,24 @@ export const router = createBrowserRouter([
         ],
       },
       {
+        path: "/notices",
+        children: [
+          {
+            path: ":comuId",
+            children: [
+              {
+                index: true,
+                element: <>공지 사항 목록</>,
+              },
+              {
+                path: ":noticeId",
+                element: <>공지 사항 상세</>,
+              },
+            ],
+          },
+        ],
+      },
+      {
         path: "/biz",
         element: <BizPage />,
       },

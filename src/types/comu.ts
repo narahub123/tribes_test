@@ -117,9 +117,4 @@ export type ComuContextType = {
   comuId: string;
 };
 
-export type ComuNotice = {
-  id: string;
-  title: string;
-  author: string;
-  createdAt: string; // ex: "5분 전", "2일 전", "2025-09-01"
-};
+

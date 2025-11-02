@@ -37,7 +37,7 @@ export const NoticeSection = () => {
                 <tr key={id} className="text-center">
                   <td className="p-2">{index}</td>
                   <td>
-                    <Link to={`/notices/main/${id}`}>{title}</Link>
+                    <Link to={`/notices/${comuId}/${id}`}>{title}</Link>
                   </td>
                   <td>{author.includes("lead") ? "리더" : "운영자"}</td>
                   <td>{createdAt}</td>
