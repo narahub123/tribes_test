@@ -6,11 +6,15 @@ import { comuNotices } from "../data";
 
 export const ComuNoticeListPage = () => {
   const { pathname } = useLocation();
-  const comuId = pathname.split("notices/")[1];
+  const comuId = pathname.split("comu/")[1].split("/notices")[0];
   const [notices, setNotices] = useState<ComuNotice[]>([]);
 
   useEffect(() => {
-    const notices = comuNotices[comuId];
+    console.log(comuId);
+    const id = comuId === "main" ? "comu1" : comuId.split("subs/")[1];
+
+    console.log(id);
+    const notices = comuNotices[id];
 
     setNotices(notices);
   }, [comuId]);
@@ -20,7 +24,7 @@ export const ComuNoticeListPage = () => {
       <header className="relative text-center">
         <p className="p-4 text-2xl font-bold">공지 사항 목록</p>
         <Link
-          to={`/comu/${comuId === "comu1" ? "main" : comuId}`}
+          to={`/comu/${comuId}`}
           title="코뮤로 돌아가기"
           className="cursor-pointer"
         >

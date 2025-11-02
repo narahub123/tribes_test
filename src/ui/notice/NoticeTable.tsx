@@ -25,7 +25,13 @@ export const NoticeTable: FC<NoticeTableProps> = ({ notices, comuId }) => {
             <tr key={id} className="text-center">
               <td className="p-2">{index}</td>
               <td>
-                <Link to={`/notices/${comuId}/${id}`}>{title}</Link>
+                <Link
+                  to={`/comu/${
+                    comuId === "comu1" ? "main" : `${comuId}`
+                  }/notices/${id}`}
+                >
+                  {title}
+                </Link>
               </td>
               <td>{author.includes("lead") ? "리더" : "운영자"}</td>
               <td>{createdAt}</td>

@@ -6,11 +6,13 @@ import { PrevButton } from "../ui";
 
 export const ComuNoticePage = () => {
   const { pathname } = useLocation();
-  const [comuId, noticeId] = pathname.split("notices/")[1].split("/");
+  const [comuId, noticeId] = pathname.split("comu/")[1].split("/notices/");
   const [notice, setNotice] = useState<ComuNotice>();
 
   useEffect(() => {
-    const notice = comuNotices[comuId].filter((n) => n.id === noticeId)[0];
+    console.log(comuId);
+    const id = comuId === "main" ? "comu1" : comuId.split("subs/")[1];
+    const notice = comuNotices[id].filter((n) => n.id === noticeId)[0];
 
     setNotice(notice);
   }, [comuId, noticeId]);
@@ -27,7 +29,7 @@ export const ComuNoticePage = () => {
       </header>
       <main className="p-4">
         <div className="flex justify-end">
-          <Link to={`/notices/${comuId}`}>공지 목록 보기</Link>
+          <Link to={`/comu/${comuId}/notices`}>공지 목록 보기</Link>
         </div>
         <div>
           <div>

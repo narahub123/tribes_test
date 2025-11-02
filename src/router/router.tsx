@@ -40,6 +40,19 @@ export const router = createBrowserRouter([
                 path: "reviews",
                 element: <ComuReviewPage />,
               },
+              {
+                path: "notices",
+                children: [
+                  {
+                    index: true,
+                    element: <ComuNoticeListPage />,
+                  },
+                  {
+                    path: ":noticeId",
+                    element: <ComuNoticePage />,
+                  },
+                ],
+              },
             ],
           },
           {
@@ -60,25 +73,20 @@ export const router = createBrowserRouter([
                     path: "reviews",
                     element: <ComuReviewPage />,
                   },
+                  {
+                    path: "notices",
+                    children: [
+                      {
+                        index: true,
+                        element: <ComuNoticeListPage />,
+                      },
+                      {
+                        path: ":noticeId",
+                        element: <ComuNoticePage />,
+                      },
+                    ],
+                  },
                 ],
-              },
-            ],
-          },
-        ],
-      },
-      {
-        path: "/notices",
-        children: [
-          {
-            path: ":comuId",
-            children: [
-              {
-                index: true,
-                element: <ComuNoticeListPage />,
-              },
-              {
-                path: ":noticeId",
-                element: <ComuNoticePage />,
               },
             ],
           },
