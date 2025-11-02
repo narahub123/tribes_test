@@ -1,5 +1,5 @@
 import { hero1, hero2, hero3, hero4 } from "../assets";
-import type { Comu, ComuNotice, ComuReviewType } from "../types";
+import type { Comu, ComuReviewType } from "../types";
 
 export const comus: Comu[] = [
   {
@@ -382,8 +382,6 @@ export const comus: Comu[] = [
     subComus: ["comu4", "comu7", "comu8", "comu9"],
   },
 ];
-
-
 
 export const comuReviews: Record<string, ComuReviewType[]> = {
   comu1: [

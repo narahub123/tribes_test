@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { MainLayout, SubComuLayout } from "../layouts";
 import {
   BizPage,
+  ComuNoticeListPage,
   ComuPage,
   ComuReviewPage,
   LandingPage,
@@ -9,6 +10,7 @@ import {
   MakersPage,
   SubComuPage,
 } from "../pages";
+import { ComuNoticePage } from "../pages/ComuNoticePage";
 
 export const router = createBrowserRouter([
   {
@@ -72,11 +74,11 @@ export const router = createBrowserRouter([
             children: [
               {
                 index: true,
-                element: <>공지 사항 목록</>,
+                element: <ComuNoticeListPage />,
               },
               {
                 path: ":noticeId",
-                element: <>공지 사항 상세</>,
+                element: <ComuNoticePage />,
               },
             ],
           },

@@ -5,3 +5,4 @@ export * from "./MakersPage";
 export * from "./MainComuPage";
 export * from "./ComuReviewPage";
 export * from "./SubComuPage";
+export * from "./ComuNoticeListPage";
