@@ -8,3 +8,4 @@ export * from "./faq";
 export * from "./activities";
 export * from "./dates";
 export * from "./books";
+export * from "./users";

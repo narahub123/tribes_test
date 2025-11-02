@@ -37,8 +37,24 @@ export const comus: Comu[] = [
       location: "서울 강남",
       createdAt: "2025-10-30",
     },
-
     subComus: ["comu2", "comu5", "comu7"],
+    members: [
+      {
+        id: "u001",
+        name: "박서연",
+        avatarUrl: "https://i.pravatar.cc/150?img=12",
+      },
+      {
+        id: "u002",
+        name: "김민준",
+        avatarUrl: "https://i.pravatar.cc/150?img=5",
+      },
+      {
+        id: "u011",
+        name: "서지훈",
+        avatarUrl: "https://i.pravatar.cc/150?img=9",
+      },
+    ],
   },
   {
     id: "comu2",
@@ -76,6 +92,24 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu1", "comu3", "comu6", "comu9"],
+
+    members: [
+      {
+        id: "u003",
+        name: "이예린",
+        avatarUrl: "https://i.pravatar.cc/150?img=24",
+      },
+      {
+        id: "u006",
+        name: "정다인",
+        avatarUrl: "https://i.pravatar.cc/150?img=18",
+      },
+      {
+        id: "u011",
+        name: "서지훈",
+        avatarUrl: "https://i.pravatar.cc/150?img=9",
+      },
+    ],
   },
   {
     id: "comu3",
@@ -115,6 +149,23 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu4", "comu5", "comu10"],
+    members: [
+      {
+        id: "u002",
+        name: "김민준",
+        avatarUrl: "https://i.pravatar.cc/150?img=5",
+      },
+      {
+        id: "u004",
+        name: "최준호",
+        avatarUrl: "https://i.pravatar.cc/150?img=30",
+      },
+      {
+        id: "u012",
+        name: "윤채원",
+        avatarUrl: "https://i.pravatar.cc/150?img=11",
+      },
+    ],
   },
   {
     id: "comu4",
@@ -152,6 +203,18 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu1", "comu2", "comu3", "comu8"],
+    members: [
+      {
+        id: "u004",
+        name: "최준호",
+        avatarUrl: "https://i.pravatar.cc/150?img=30",
+      },
+      {
+        id: "u008",
+        name: "한수빈",
+        avatarUrl: "https://i.pravatar.cc/150?img=21",
+      },
+    ],
   },
   {
     id: "comu5",
@@ -189,6 +252,23 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu6", "comu7", "comu9"],
+    members: [
+      {
+        id: "u001",
+        name: "박서연",
+        avatarUrl: "https://i.pravatar.cc/150?img=12",
+      },
+      {
+        id: "u005",
+        name: "황지우",
+        avatarUrl: "https://i.pravatar.cc/150?img=8",
+      },
+      {
+        id: "u012",
+        name: "윤채원",
+        avatarUrl: "https://i.pravatar.cc/150?img=11",
+      },
+    ],
   },
   {
     id: "comu6",
@@ -228,6 +308,18 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu2", "comu3", "comu5", "comu10"],
+    members: [
+      {
+        id: "u005",
+        name: "황지우",
+        avatarUrl: "https://i.pravatar.cc/150?img=8",
+      },
+      {
+        id: "u009",
+        name: "문서영",
+        avatarUrl: "https://i.pravatar.cc/150?img=2",
+      },
+    ],
   },
   {
     id: "comu7",
@@ -267,6 +359,18 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu1", "comu4", "comu8"],
+    members: [
+      {
+        id: "u007",
+        name: "오태민",
+        avatarUrl: "https://i.pravatar.cc/150?img=3",
+      },
+      {
+        id: "u011",
+        name: "서지훈",
+        avatarUrl: "https://i.pravatar.cc/150?img=9",
+      },
+    ],
   },
   {
     id: "comu8",
@@ -304,6 +408,23 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu3", "comu6", "comu7", "comu9", "comu10"],
+    members: [
+      {
+        id: "u006",
+        name: "정다인",
+        avatarUrl: "https://i.pravatar.cc/150?img=18",
+      },
+      {
+        id: "u010",
+        name: "백현우",
+        avatarUrl: "https://i.pravatar.cc/150?img=14",
+      },
+      {
+        id: "u012",
+        name: "윤채원",
+        avatarUrl: "https://i.pravatar.cc/150?img=11",
+      },
+    ],
   },
   {
     id: "comu9",
@@ -342,6 +463,18 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu1", "comu2", "comu5"],
+    members: [
+      {
+        id: "u002",
+        name: "김민준",
+        avatarUrl: "https://i.pravatar.cc/150?img=5",
+      },
+      {
+        id: "u009",
+        name: "문서영",
+        avatarUrl: "https://i.pravatar.cc/150?img=2",
+      },
+    ],
   },
   {
     id: "comu10",
@@ -380,6 +513,18 @@ export const comus: Comu[] = [
     },
 
     subComus: ["comu4", "comu7", "comu8", "comu9"],
+    members: [
+      {
+        id: "u008",
+        name: "한수빈",
+        avatarUrl: "https://i.pravatar.cc/150?img=21",
+      },
+      {
+        id: "u010",
+        name: "백현우",
+        avatarUrl: "https://i.pravatar.cc/150?img=14",
+      },
+    ],
   },
 ];
 

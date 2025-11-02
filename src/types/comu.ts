@@ -101,6 +101,12 @@ export interface ComuProfileType {
   missions: string[];
 }
 
+export interface ComuMember {
+  id: string;
+  name: string;
+  avatarUrl: string;
+}
+
 export type Comu = {
   id: string;
   hero: HeroType;
@@ -111,10 +117,9 @@ export type Comu = {
   comuProfile: ComuProfileType;
   programInfo: ProgramInfoType;
   subComus: string[];
+  members: ComuMember[];
 };
 
 export type ComuContextType = {
   comuId: string;
 };
-
-
