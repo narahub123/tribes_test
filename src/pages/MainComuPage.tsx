@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import {
   ReviewSection,
-  CommunitySection,
   LeaderSection,
   LeadershipSection,
   NoticeSection,
@@ -38,7 +37,6 @@ export const MainComuPage = () => {
           <LeadershipSection />
           <ComuProfileSection />
           <NoticeSection />
-          <CommunitySection />
           <ReviewSection />
           <SubComuSection />
         </ComuProvider>
