@@ -8,7 +8,7 @@ export const ArchiveSection = () => {
   };
   return (
     <section>
-      <ComuSectionHeader title={"지료실"} />
+      <ComuSectionHeader title={"자료실"} />
       <div className="px-2 py-8 flex gap-2">
         {books.map((b) => (
           <div key={b.id} className="w-full flex flex-col items-center gap-4">

@@ -36,6 +36,7 @@ import {
   IoCheckbox as checkBoxFill, // 체크 박스
   IoRadioButtonOn as radioOn, // 라디온 온
   IoRadioButtonOff as radioOff, // 라디오 오프
+  IoCalendarSharp as calendarFill,
 } from "react-icons/io5";
 
 import {
@@ -97,4 +98,5 @@ export const icons = {
   radioOn,
   radioOff,
   metaPlus,
+  calendarFill,
 };
