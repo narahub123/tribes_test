@@ -8,6 +8,7 @@ import {
   SubComuSection,
   HeroSection,
   ComuProfileSection,
+  FAQSection,
 } from "../ui";
 import { useEffect, useState } from "react";
 import { ComuProvider } from "../contexts";
@@ -39,6 +40,7 @@ export const MainComuPage = () => {
           <NoticeSection />
           <ReviewSection />
           <SubComuSection />
+          <FAQSection />
         </ComuProvider>
       </main>
     </div>

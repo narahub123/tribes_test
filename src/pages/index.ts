@@ -6,3 +6,4 @@ export * from "./MainComuPage";
 export * from "./ComuReviewPage";
 export * from "./SubComuPage";
 export * from "./ComuNoticeListPage";
+export * from "./FAQPage";

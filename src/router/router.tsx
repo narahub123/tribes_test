@@ -5,6 +5,7 @@ import {
   ComuNoticeListPage,
   ComuPage,
   ComuReviewPage,
+  FAQPage,
   LandingPage,
   MainComuPage,
   MakersPage,
@@ -99,6 +100,10 @@ export const router = createBrowserRouter([
       {
         path: "/makers",
         element: <MakersPage />,
+      },
+      {
+        path: "/faqs",
+        element: <FAQPage />,
       },
     ],
   },
