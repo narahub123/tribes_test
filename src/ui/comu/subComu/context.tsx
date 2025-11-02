@@ -4,12 +4,12 @@ import {
   type FC,
   type PropsWithChildren,
 } from "react";
-import type { SubComuType } from "../../../types";
+import type { SubComuCardType } from "../../../types";
 
-export const SubComuContext = createContext<SubComuType | null>(null);
+export const SubComuContext = createContext<SubComuCardType | null>(null);
 
 interface SubComuProviderProps {
-  value: SubComuType;
+  value: SubComuCardType;
 }
 
 export const SubComuProvider: FC<PropsWithChildren<SubComuProviderProps>> = ({

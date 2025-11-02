@@ -1,10 +1,5 @@
 import { leader1, leader2, leader3, leader4 } from "../assets";
-import type {
-  ComuNoticeType,
-  ComuReviewType,
-  SubComuCardType,
-  SubComuType,
-} from "../types/comu";
+import type { ComuNoticeType, SubComuCardType } from "../types/comu";
 
 export const notices: ComuNoticeType[] = [
   {
@@ -370,4 +365,4 @@ export const subComuCards: SubComuCardType[] = [
   },
 ];
 
-export const subComus: Record<string, SubComuType> = {};
+export const subComus: Record<string, SubComuCardType> = {};
