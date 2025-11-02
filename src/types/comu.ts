@@ -85,12 +85,15 @@ export type ComuInfoType = "intro" | "vision" | "mission";
 
 export type ComuInfo = Record<ComuInfoType, string>;
 
+export interface HeroType {
+  imgUrl: string;
+  title: string;
+  desc: string;
+}
+
 export type Comu = {
   id: string;
-  header: {
-    title: "Leader";
-    desc: string;
-  };
+  hero: HeroType;
   leader: {
     leaderId: string;
     info: ComuInfo;

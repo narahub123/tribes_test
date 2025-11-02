@@ -10,6 +10,7 @@ import {
   PrevButton,
   VisionSection,
   SubComuSection,
+  HeroSection,
 } from "../ui";
 import { useEffect, useState } from "react";
 import { ComuProvider } from "../contexts";
@@ -34,6 +35,7 @@ export const MainComuPage = () => {
       </header>
       <main>
         <ComuProvider value={{ comuId }}>
+          <HeroSection />
           <LeaderSection />
           <LeadershipSection />
           <OriginSection />

@@ -1,10 +1,12 @@
+import { hero1, hero2, hero3, hero4 } from "../assets";
 import type { Comu, ComuNotice, ComuReviewType } from "../types";
 
 export const comus: Comu[] = [
   {
     id: "comu1",
-    header: {
-      title: "Leader",
+    hero: {
+      imgUrl: hero1,
+      title: "Main Comu",
       desc: "세상을 변화 시키는 한 사람의 위대한 변화",
     },
     leader: {
@@ -46,7 +48,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu2",
-    header: { title: "Leader", desc: "작은 변화가 세상을 바꾼다" },
+    hero: {
+      imgUrl: hero2,
+      title: "Leader",
+      desc: "작은 변화가 세상을 바꾼다",
+    },
     leader: {
       leaderId: "leader2",
       info: {
@@ -85,7 +91,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu3",
-    header: { title: "Leader", desc: "함께 배우며 성장하는 여정" },
+    hero: {
+      imgUrl: hero3,
+      title: "Leader",
+      desc: "함께 배우며 성장하는 여정",
+    },
     leader: {
       leaderId: "leader3",
       info: {
@@ -125,7 +135,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu4",
-    header: { title: "Leader", desc: "리더십으로 세상을 변화시키다" },
+    hero: {
+      imgUrl: hero4,
+      title: "Leader",
+      desc: "리더십으로 세상을 변화시키다",
+    },
     leader: {
       leaderId: "leader4",
       info: {
@@ -161,7 +175,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu5",
-    header: { title: "Leader", desc: "작은 모임에서 큰 변화를" },
+    hero: {
+      imgUrl: hero1,
+      title: "Leader",
+      desc: "작은 모임에서 큰 변화를",
+    },
     leader: {
       leaderId: "leader5",
       info: {
@@ -197,7 +215,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu6",
-    header: { title: "Leader", desc: "배움과 나눔의 연결고리" },
+    hero: {
+      imgUrl: hero1,
+      title: "Leader",
+      desc: "배움과 나눔의 연결고리",
+    },
     leader: {
       leaderId: "leader6",
       info: {
@@ -235,7 +257,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu7",
-    header: { title: "Leader", desc: "지식과 경험을 공유하는 리더" },
+    hero: {
+      imgUrl: hero1,
+      title: "Leader",
+      desc: "지식과 경험을 공유하는 리더",
+    },
     leader: {
       leaderId: "leader7",
       info: {
@@ -273,7 +299,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu8",
-    header: { title: "Leader", desc: "성장을 만드는 학습 공동체" },
+    hero: {
+      imgUrl: hero1,
+      title: "Leader",
+      desc: "성장을 만드는 학습 공동체",
+    },
     leader: {
       leaderId: "leader8",
       info: {
@@ -309,7 +339,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu9",
-    header: { title: "Leader", desc: "혁신과 도전의 학습 커뮤니티" },
+    hero: {
+      imgUrl: hero1,
+      title: "Leader",
+      desc: "혁신과 도전의 학습 커뮤니티",
+    },
     leader: {
       leaderId: "leader9",
       info: {
@@ -346,7 +380,11 @@ export const comus: Comu[] = [
   },
   {
     id: "comu10",
-    header: { title: "Leader", desc: "미래를 준비하는 학습 공동체" },
+    hero: {
+      imgUrl: hero1,
+      title: "Leader",
+      desc: "미래를 준비하는 학습 공동체",
+    },
     leader: {
       leaderId: "leader10",
       info: {
