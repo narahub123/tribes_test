@@ -9,6 +9,7 @@ import {
   HeroSection,
   ComuProfileSection,
   FAQSection,
+  ActivitySection,
 } from "../ui";
 import { useEffect, useState } from "react";
 import { ComuProvider } from "../contexts";
@@ -39,6 +40,7 @@ export const MainComuPage = () => {
           <ComuProfileSection />
           <NoticeSection />
           <ReviewSection />
+          <ActivitySection />
           <SubComuSection />
           <FAQSection />
         </ComuProvider>

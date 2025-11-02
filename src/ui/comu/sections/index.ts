@@ -7,3 +7,4 @@ export * from "./SubComuSection";
 export * from "./HeroSection";
 export * from "./ComuProfileSection";
 export * from "./FAQSection";
+export * from "./ActivitySection";
