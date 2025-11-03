@@ -21,7 +21,7 @@ export const ActivityImageModal: FC<ActivityImageModalProps> = ({
         onClick={onClose}
       />
 
-      <div className="w-[70%] aspect-4/3  max-h-[60%] absolute top-[50%] left-[50%] transform -translate-[50%] flex justify-center items-center">
+      <div className="absolute top-[50%] left-[50%] transform -translate-[50%] flex justify-center items-center">
         <button
           className="absolute right-4 top-4 text-white z-10 text-2xl cursor-pointer "
           onClick={onClose}
