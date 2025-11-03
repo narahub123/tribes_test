@@ -29,7 +29,7 @@ export const SubComuSection = () => {
     setSubComus(subs);
   }, [comuId]);
 
-  const filtered = subComus.slice(0, 4);
+  const filtered = subComus.slice(0, 2);
   return (
     <section>
       <ComuSectionHeader title={"Sub Comu"} />
