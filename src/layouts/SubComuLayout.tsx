@@ -58,20 +58,22 @@ export const SubComuLayout = () => {
       </div>
 
       <ComuProvider value={{ comuId }}>
-        <LeaderSection />
-        <LeadershipSection />
-        <ComuProfileSection />
-        <ProgramInfoSection />
-        <BookSection />
-        <ScheduleSection />
-        <NoticeSection />
-        <ReviewSection />
-        <ActivitySection />
-        <CommunitySection />
-        <MemberSection />
-        <TrackerSection />
-        <ArchiveSection />
-        <ApplyButton onClick={handleToggle} />
+        <div className="p-4 space-y-6">
+          <LeaderSection />
+          <LeadershipSection />
+          <ComuProfileSection />
+          <ProgramInfoSection />
+          <BookSection />
+          <ScheduleSection />
+          <NoticeSection />
+          <ReviewSection />
+          <ActivitySection />
+          <CommunitySection />
+          <MemberSection />
+          <TrackerSection />
+          <ArchiveSection />
+          <ApplyButton onClick={handleToggle} />
+        </div>
       </ComuProvider>
     </div>
   );
