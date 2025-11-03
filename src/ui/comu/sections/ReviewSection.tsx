@@ -19,7 +19,7 @@ export const ReviewSection = () => {
   const filtered = reviews.slice(0, 3);
 
   return (
-    <section>
+    <section className="space-y-4">
       <ComuSectionHeader title={`후기 (${reviews.length})`} />
       <div className="space-y-4 p-4">
         {filtered.map((review) => {

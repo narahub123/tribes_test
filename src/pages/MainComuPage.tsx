@@ -32,7 +32,7 @@ export const MainComuPage = () => {
         <h2 className="font-bold text-3xl text-center">메인 커뮤</h2>
         <PrevButton className="absolute top-2 left-0" />
       </header>
-      <main>
+      <main className="space-y-6">
         <ComuProvider value={{ comuId }}>
           <HeroSection />
           <LeaderSection />
